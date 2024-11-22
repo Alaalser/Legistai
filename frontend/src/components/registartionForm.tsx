@@ -47,12 +47,15 @@ const RegisterForm = () => {
         toast.success("Registration successful!");
 
         // Navigate to profile page with user data
-        console.log('data',response.data);
-        
-        const userID = response.data.userID;
-        router.push(`/profile/${userID}`);
+        console.log('data', response.data);
+
+        const userID = await response.data.userID;
+        if (userID) {
+
+          router.push(`/profile/${userID}`);
+        }
       } catch (error: any) {
-        
+
         console.error("Registration failed:", error);
         toast.error(error.response?.data?.error || "Registration failed.");
       } finally {
