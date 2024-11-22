@@ -1,6 +1,6 @@
 "use client"; // Ensure this is client-side code
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter from next/navigation
 
 const HomePage = () => {

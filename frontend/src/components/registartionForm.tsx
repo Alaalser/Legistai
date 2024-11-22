@@ -46,11 +46,10 @@ const RegisterForm = () => {
 
         toast.success("Registration successful!");
 
-        // Navigate to profile page with user data
-        console.log('data', response.data);
 
         const userID = await response.data.userID;
         if (userID) {
+          localStorage.setItem("userID", userID);
 
           router.push(`/profile/${userID}`);
         }
