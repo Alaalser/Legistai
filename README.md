@@ -15,6 +15,7 @@ Open your terminal and `cd` into the backend folder of the project.
 
 ```bash
 cd backend
+source venv/bin/activate
 pip install -r requirements.txt
 python3 run.py
 ```
