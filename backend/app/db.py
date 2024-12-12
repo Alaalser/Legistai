@@ -9,6 +9,7 @@ connection_string = (
     "Pwd=admin@123;"
     "Encrypt=yes;"
     "TrustServerCertificate=no;"
+    "Connection Timeout=45;"
 )
 
 def get_db_connection():

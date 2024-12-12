@@ -39,6 +39,7 @@ python3 run.py
 
 ```bash
 npm i
-npm run dev
+npm install --legacy-peer-deps
+npm outdated
+npx npm-check-updates -u
 ```
-
