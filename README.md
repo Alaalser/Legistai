@@ -39,6 +39,7 @@ python3 run.py
 
 ```bash
 npm install --legacy-peer-deps
+npm install
 npm outdated
 npx npm-check-updates -u
 ```
