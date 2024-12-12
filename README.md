@@ -38,8 +38,7 @@ python3 run.py
 #### Step 1: Navigate to the Frontend Directory
 
 ```bash
-npm install --legacy-peer-deps
-npm install
 npm outdated
 npx npm-check-updates -u
+npm install --legacy-peer-deps
 ```
