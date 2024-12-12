@@ -15,7 +15,20 @@ Open your terminal and `cd` into the backend folder of the project.
 
 ```bash
 cd backend
+```
+
+For Linux or macOS:
+```bash
+python3 -m venv venv
 source venv/bin/activate
+pip install -r requirements.txt
+python3 run.py
+```
+
+For Windows:
+```bash
+python3 -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 python3 run.py
 ```
